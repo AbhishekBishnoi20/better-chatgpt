@@ -25,7 +25,12 @@ export const modelOptions: ModelOptions[] = [
   'gpt-4-32k',
   'gpt-4-1106-preview',
   'gpt-4-turbo-preview',
-  'gemini-pro'
+  'gemini-pro',
+  'claude-3-opus-20240229',
+  'claude-3-sonnet-20240229',
+  'claude-3-haiku-20240307',
+  'claude-2.1',
+  'claude-2.0'
   // 'gpt-3.5-turbo-0301',
   // 'gpt-4-0314',
   // 'gpt-4-32k-0314',
@@ -48,7 +53,12 @@ export const modelMaxToken = {
   'gpt-4-32k-0613': 32768,
   'gpt-4-1106-preview': 128000,
   'gpt-4-turbo-preview': 128000,
-  'gemini-pro': 32768
+  'gemini-pro': 32768,
+  'claude-3-opus-20240229': 200000,
+  'claude-3-sonnet-20240229': 200000,
+  'claude-3-haiku-20240307': 200000,
+  'claude-2.1': 200000,
+  'claude-2.0': 100000
 };
 
 export const modelCost = {
@@ -109,6 +119,26 @@ export const modelCost = {
     completion: { price: 0.03, unit: 1000 },
   },
   'gemini-pro': {
+    prompt: { price: 0.00125, unit: 1000 },
+    completion: { price: 0.0025, unit: 1000 },
+  },
+    'claude-3-opus-20240229': {
+    prompt: { price: 0.00125, unit: 1000 },
+    completion: { price: 0.0025, unit: 1000 },
+  },
+    'claude-3-sonnet-20240229': {
+    prompt: { price: 0.00125, unit: 1000 },
+    completion: { price: 0.0025, unit: 1000 },
+  },
+    'claude-3-haiku-20240307': {
+    prompt: { price: 0.00125, unit: 1000 },
+    completion: { price: 0.0025, unit: 1000 },
+  },
+    'claude-2.1': {
+    prompt: { price: 0.00125, unit: 1000 },
+    completion: { price: 0.0025, unit: 1000 },
+  },
+    'claude-2.0': {
     prompt: { price: 0.00125, unit: 1000 },
     completion: { price: 0.0025, unit: 1000 },
   },
